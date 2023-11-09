@@ -52,7 +52,7 @@ const Controls = ({ clear, setCurrentBeat }) => {
 	};
 
 	return (
-		<div className="bg-slate-100 rounded-md shadow-md flex flex-col gap-4 p-4">
+		<div className="bg-slate-100 rounded-md shadow-md flex flex-col gap-4 p-4 ">
 			<div className="flex gap-3 items-center">
 				<div className="flex flex-col gap-1">
 					<div className="border-b-4 border-blue-600 w-12 h-1" />
