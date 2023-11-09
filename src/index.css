@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-display {
+  font-family: 'sui-generis', sans-serif;
+}
+
+.font-body {
+  font-family: "new-order", sans-serif;
+}
