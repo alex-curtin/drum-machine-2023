@@ -3,17 +3,18 @@ import * as Tone from "tone";
 import { emptyPattern } from "./constants";
 
 const hatOpen = new Tone.MetalSynth({
-	frequency: 350,
+	frequency: 1200,
 	envelope: {
 		attack: 0.001,
-		decay: 0.4,
-		release: 0.1,
+		decay: 0.3,
+		release: 0.3,
+		sustain: 0.3,
 	},
-	harmonicity: 3.1,
+	harmonicity: 6.1,
 	modulationIndex: 42,
-	resonance: 4000,
-	octaves: 1.5,
-	volume: -5,
+	resonance: 6000,
+	octaves: 1,
+	volume: 1,
 }).toDestination();
 
 export const hatOpenSequence = new Tone.Sequence(
