@@ -57,7 +57,7 @@ const App = () => {
 	};
 
 	return (
-		<div className="w-full bg-slate-600 font-body tracking-wide min-h-screen flex justify-center">
+		<div className="w-full font-body tracking-wide min-h-screen flex justify-center">
 			<div className="p-4 w-fit main flex flex-col gap-2">
 				<Hero />
 				<Controls clear={clear} setCurrentBeat={setCurrentBeat} />
@@ -73,12 +73,12 @@ const App = () => {
 							<div className="flex-grow border-b-4 border-green-600 h-1" />
 						</div>
 					</div>
-					<div className="flex gap-2">
+					<div className="flex gap-2 flex-wrap">
 						{presets.map((preset) => (
 							<div key={preset.name}>
 								<button
 									type="button"
-									className="bg-green-600 text-white font-semibold uppercase px-2 min-w-[80px] h-10 rounded-md hover:bg-green-700 active:bg-green-500"
+									className="bg-green-600 text-white font-semibold uppercase px-2 min-w-[50px] sm:min-w-[80px] h-10 rounded-md hover:bg-green-700 active:bg-green-500"
 									onClick={() => activatePreset(preset.patterns)}
 								>
 									{preset.name}
